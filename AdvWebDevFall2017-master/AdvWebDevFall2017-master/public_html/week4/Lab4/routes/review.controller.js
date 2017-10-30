@@ -89,7 +89,7 @@ module.exports.update = function(req, res){
             .exec() 
             .then(function(reviewData) {
                 // figure out why the data is not saving.
-                debug(req.body);//Use this code to debug this issue
+                //debug(req.body);//Use this code to debug this issue
                 reviewData.firstName = req.body.firstName;
                 reviewData.lastName = req.body.lastName;
                 reviewData.department = req.body.department;
